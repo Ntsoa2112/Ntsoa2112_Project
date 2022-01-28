@@ -136,8 +136,12 @@ footer .media p i{
     align-items: center;
 }
 
-@media screen and (max-width:680){
-    nav h2{
-        background-color: red;
+@media screen and (max-width:680px){
+    nav{
+        position: relative;
+    }
+
+    .cards .card{
+        margin-right: 0px;
     }
 }

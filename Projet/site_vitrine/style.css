@@ -144,7 +144,6 @@ footer #contact{
     nav .onglets{
         margin-left: 0;
         margin-bottom: 20px;
-        margin-top: 120px;
         position: relative;
         right: 12%;
     }
@@ -177,5 +176,31 @@ footer #contact{
     footer h2{
         margin-left: 5px;
         width: 150px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    nav .onglets{
+        margin-top: 80px;
+        right: 0%;
+    }
+
+    nav #titre{
+        margin-top: 10px;
+        right: 60%;
+        left: 0%;
+    }
+}
+
+@media screen and (max-width:380px) {
+    nav .onglets{
+        margin-top: 20px;
+        right: 0%;
+    }
+
+    nav #titre{
+        margin-top: 10px;
+        right: 60%;
+        left: 0%;
     }
 }
