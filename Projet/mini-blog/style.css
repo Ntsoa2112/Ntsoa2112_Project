@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+
+*, ::after, ::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2.5% 7%;
+}
+
+nav h2{
+    font-family: 'Crimson Text';
+    font-size: 29px;
+}
+
+nav .onglets a{
+    text-decoration: none;
+    color: #7f7e7e;
+    margin-right: 10px;
+}
+
+.main{
+    margin: 4.3% 7% 0.5% 7%;
+}
+
+.main .cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.main .cards .card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 4%;
+}
+
+.main .cards .card img{
+    height: 300px;
+    width: 500px;
+}
+
+.main .cards .contenu{
+    max-width: 50%;
+    margin: 15px 40px;
+}
+
+.main .cards .contenu .date{
+    color: #7f7e7e;
+}
+
+.main .cards .contenu h2{
+    margin: 15px 0;
+    font-size: 1.5em;
+}
+
+.main .cards .contenu .description{
+    color: #2d2d2d;
+    margin-bottom: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0% 7% 3% 7%;
+}
+
+footer .media{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .media .copyright p{
+    color: #494949;
+}
+
+footer .media p{
+    margin-right: 20px;
+}
+
+@media screen and (max-width:680px) {
+    nav h2{
+        margin: 17px 0px;
+        padding-top:5px;
+    }
+
+    .main{
+        display: block;
+        margin-top: 35px;
+    }
+
+    .main .cards .card img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .main .cards .contenu{
+        margin: 10px 0px 35px 0px;
+        max-width: 100%;
+    }
+}
