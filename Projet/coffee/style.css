@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --bg: #010103;
+    --border: .1rem solid rgba(255,255,255,.3);
+    --main-color: #d3ad7f;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg);
+    color: #fff;
+    padding: 1.5rem 7%;
+    position: sticky;
+    top: 0;
+    height: 94px;
+    border-bottom: var(--border);
+}
+
+nav .logo img{
+    height: 60px;
+    width: 74px;
+}
+
+nav .onglet a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    margin: 0 0.6rem;
+}
+
+nav .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .box .ouvrir, nav .box .fermer{
+    display: none;
+}
+
+nav .box div{
+    margin-right: 20px;
+}
+
+nav .box div i{
+    font-size: 1.6rem;
+}
+
+header{
+    background: url('images/home-img.jpeg') no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background-position: center;
+    margin-top: -10px;
+}
+
+header div{
+    width: 45%;
+    margin-left: 7%;
+}
+
+header div h1{
+    font-size: 3.9rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+header div p{
+    color: #eee;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    margin: 2% 0 4% 0;
+}
+
+header div button{
+    outline: none;
+    padding: 0.5rem 1.7rem;
+    font-size: 1rem;
+    color: #fff;
+    background: var(--main-color);
+    border: none;
+    font-weight: 400;
+    transition: letter-spacing 0.5s;
+}
+
+header div button:hover{
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 1100px){
+    /*style grandes tablettes et portable */
+
+}
+
+@media screen and (max-width: 966px){
+    /*style petites-moyennes tablettes */
+
+}
+
+@media screen and (max-width: 768px){
+    /*style smartphones et petites tablettes en portrait*/
+
+    .header .navbar.active{
+        right:0;
+    }
+    nav .logo img{
+        height: 48px;
+        width: 58.39px;
+    }
+
+    nav .box div i{
+        font-size: 1.25rem;
+    }
+
+    nav .box #menu-btn{
+        display: inline-block;
+    }
+
+    nav .box .ouvrir{
+        display: block;
+    }
+
+    nav .box .fermer{
+        display: none;
+    }
+
+    .open nav .box .ouvrir{
+        display: none;
+    }
+
+    .open nav .box .fermer{
+        display: block;
+    }
+    
+    .open nav .logo, .open nav .toggle{
+        position: relative;
+        z-index: 20;
+    }
+
+    nav .onglet{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 5.9rem;
+        left: 0;
+        width: 100%;
+        height: 80vh;
+        background: #fff;
+        transform: translateX(+100%);
+        transition: transform 0.5s;
+    }
+
+    .open nav .onglet a{
+        color: #000;
+        font-size: 1rem;
+        padding: 0.7rem 0.5rem;
+    }
+
+    .open nav .onglet{
+        transform: translateX(35%);
+    }
+
+    header div{
+        width: 100%;
+    }
+
+    header div h1{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    header div p{
+        text-align: center;
+        font-size: 0.7rem;
+    }
+
+    header div .btn{
+        text-align: center;
+    }
+
+    header div button{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 380px){
+    /*style petits smartphones*/
+
+}
